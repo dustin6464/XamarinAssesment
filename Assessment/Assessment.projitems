@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{BC61BEC1-87E3-4756-BB18-AA6A2894418E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Assessment</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Command.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ServiceLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IDataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\HelperFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ReminderListDataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ExtensionFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ReminderList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Reminder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ReminderListsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ReminderListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ReminderDataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Mock\MockReminderDataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Mock\MockReminderListDataStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Mock\" />
+  </ItemGroup>
+</Project>
